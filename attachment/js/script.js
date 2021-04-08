@@ -16,52 +16,24 @@
 //     {a: 1, b:2}
 // ]
 
-// function calculate(array, obj) {
+// function calculate(array) {
 //     return array.reduce((acc, item) => {
 //         for (let obj in array) {
-            
+//           return obj+= acc + item
 //         }
-//         return acc + item.x
 //     }, {})
 // };
 
 // let arr = calculate(object)
+// console.log(arr)
 
-
-// =====================================================================================================
-// Написать ф-цию, которая принимает массив объектов типа {name: 'Jonh', age: 20}
-// и вторым параметром ключ, по которому надо собрать массив
-// понимаю, где что не так... 
-
-let obj = [
-	{ name: 'Sergey', age: 33 },
-  { name: 'Daria', age: 31 }
-]
-
-function getAges(array, key) {
-    let newArr;
-    return newArr = array.forEach(item => item.key)
-};
-
-getAges(obj, age)
-
-// getAges([
+// let obj = [
 // 	{ name: 'Sergey', age: 33 },
-//   { name: 'Daria', age: 33 }
-// ], 'name') // => ['Sergey', 'Daria']
-
-// getAges([
-// 	{ name: 'Sergey', age: 33 },
-//   { name: 'Daria', age: 33 }
-// ], 'age') // => [33, 33]
+//   { name: 'Daria', age: 31 }
+// ];
 
 
-//  for (let key in obj) {
-//     console.log(obj[key].age)
-// }
 
-// obj.forEach(item=>{
-//     console.log(item.age)
-// })
 
-// =====================================================================================================
+
+
