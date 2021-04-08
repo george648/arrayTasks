@@ -8,8 +8,6 @@ let obj = [
 
 function getAges (array) {
   let newArr = [];
-  // console.log(array.map(item => item.age))
-  // return newArr.push(array.map(item => item.age))
   return array.map(item => item.age)
 };
 
