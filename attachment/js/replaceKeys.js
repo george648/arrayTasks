@@ -7,27 +7,34 @@ let obj = [
     {name: 'Daria', age: 31}
 ];
 
-// console.log(obj.forEach(item => item.name)); // не работает...
-
 // for (let key in obj) {
     // console.log(obj[key].name)
-    // console.log(obj[key])
+    // console.log(key)
 // }
 
 // console.log(Object.entries(obj))
 // console.log(Object.values(obj))
 
 // for (let value of obj) {
-//     console.log(value)
-
+    // console.log(value)
+    // console.log(obj[value])
 // }
 
-
 function convertObject(obj) {
-    return obj.reduce((acc, item) => {
-        acc += item
-    }, [])
-}
+    obj.forEach(element => {
+        let newObj = {};
+        let arrKey = [];
+        let arrValues = [];
+        for(let key in element) {
+        arrKey.push(key)
+        arrValues.push(element[key])
+        for(let i = 0; i < arrKey.length; i++) {
+            newObj[arrValues[i]] = arrKey
+        }
+    } 
+    return newObj
+    });
+};
 
 console.log(convertObject(obj))
 
